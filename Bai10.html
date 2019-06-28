@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+      let csm = parseInt(prompt("Nhập chỉ số mới: "));
+      let csc = parseInt(prompt("Nhập chỉ số cũ: "));
+      let tieuthu = csm-csc;
+      let tien;
+
+      if (tieuthu<=100)
+      {
+          tien= tieuthu*1000;
+          alert("Tiền điên là: "+ tien);
+      }else  if (tieuthu<200)
+      {
+          tien= (100*1000) + (tieuthu-100)*1200;
+          alert("Tiền điện là: "+ tien);
+      } else
+          {
+          tien= (100*1000) + 100*1200 + (tieuthu-200)*1500;
+          alert("Tiền điện là: "+ tien);
+      }
+
+  </script>
+</body>
+</html>
